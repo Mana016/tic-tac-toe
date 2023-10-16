@@ -1,38 +1,49 @@
-html, body {
-    margin: 0;
-    padding: 0;
-    background-color: black;
-    display: grid;
-    align-items: center;
+body {
+    display: flex;
     justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
 }
 
 .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
     text-align: center;
-    width: 400px;
-    height: 400px;
-    background-color: grey;
 }
 
-.grid-box {
-    border: 1px solid blue;
-    color: red;
-    font-size: 50px;
+.board {
     display: grid;
-    grid-template-rows: 1fr .3fr;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 5px;
+    margin-top: 20px;
 }
 
-h1 {
-    text-align: center;
+.cell {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    background-color: #eee;
+    cursor: pointer;
+}
+
+.message {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.reset-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #0074d9;
     color: white;
+    border: none;
+    cursor: pointer;
 }
 
-.game-board-button {
-    background-color: white;
-    grid-row: 2 / 3;
+.reset-button:hover {
+    background-color: #0056a1;
 }
-
-.start-game-button

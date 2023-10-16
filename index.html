@@ -1,43 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet">
-    <script src="script.js" defer></script>
-    <title>Tic-tac-toe</title>
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <h1>Tic Tac Toe</h1>
     <div class="container">
-        <div class="grid-box grid-box0">
-            <button type="submit" class="game-board-button">Select</button>
+        <h1>Tic Tac Toe</h1>
+        <div class="board" id="board">
+            <div class="cell" id="0"></div>
+            <div class="cell" id="1"></div>
+            <div class="cell" id="2"></div>
+            <div class="cell" id="3"></div>
+            <div class="cell" id="4"></div>
+            <div class="cell" id="5"></div>
+            <div class="cell" id="6"></div>
+            <div class="cell" id="7"></div>
+            <div class="cell" id="8"></div>
         </div>
-        <div class="grid-box grid-box1">
-            <button type="submit" class="game-board-button">Select</button>
-        </div>
-        <div class="grid-box grid-box2">
-            <button type="submit" class="game-board-button">Select</button>
-        </div>
-        <div class="grid-box grid-box3">
-            <button type="submit" class="game-board-button">Select</button>
-        </div>
-        <div class="grid-box grid-box4">
-            <button type="submit" class="game-board-button">Select</button>
-        </div>
-        <div class="grid-box grid-box5">
-            <button type="submit" class="game-board-button">Select</button>
-        </div>
-        <div class="grid-box grid-box6">
-            <button type="submit" class="game-board-button">Select</button>
-        </div>
-        <div class="grid-box grid-box7">
-            <button type="submit" class="game-board-button">Select</button>
-        </div>
-        <div class="grid-box grid-box8">
-            <button type="submit" class="game-board-button">Select</button>
-        </div>
+        <div class="message" id="message">X's turn</div>
+        <button class="reset-button" id="reset-button">Reset</button>
     </div>
-    <button type="submit" class="start-game-button">Start /Restart Game</button>
+    <script src="script.js"></script>
 </body>
 </html>
